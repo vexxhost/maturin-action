@@ -6,6 +6,10 @@ on:
     # Run every day at 1:00
     - cron: '0 1 * * *'
 
+permissions:
+  contents: write
+  pull-requests: write
+
 jobs:
   update:
     name: Update Versions Manifest
